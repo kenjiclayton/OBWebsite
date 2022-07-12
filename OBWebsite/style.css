@@ -1,0 +1,16 @@
+*{
+    margin: 00;
+    padding: 00;
+}
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#ff8a00),url(image/Banner/Banner\ for\ now.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 2%;
+    left: 8%;
+}
