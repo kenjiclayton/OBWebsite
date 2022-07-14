@@ -3,7 +3,7 @@
     <head>
         <title>OBPH Graphics Artist - Guides</title>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width =device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Unna&display=swap" rel="stylesheet">
@@ -34,8 +34,25 @@
     </div>
     <div id="menuBtn">
         <img src="image/Elements/Menus.png">
-    </div> 
+    </div>
     
+    <!--Features-->
+    <section id="feature">
+        <div class="title-text">
+            <p>UA - GA</p>
+            <h1>MEMBERS</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>O Manager</h1>
+            </div>
+            <!--<div class="features-img">
+                <h1>O Manager</h1>
+            </div>-->
+        </div>
+        
+    </section>
+   
     <script>
         var menuBtn = document.getElementById("menuBtn")
         var sideNav = document.getElementById("sideNav")
@@ -47,11 +64,10 @@
             if(sideNav.style.right == "-250px"){
                 sideNav.style.right = "0";
                 menu.src = "image/Elements/close.png";
-            }
-            else{
+            }else{
                 sideNav.style.right = "-250px";
                 menu.src = "image/Elements/Menus.png";
-            }
+            } 
         }
     </script>
     
