@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>UA - GA Members</title>
+        <link rel="stylesheet" href="stylemembers.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+        <script src="lightbox-plus-jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Unna&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Menu -->
+        
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ILLUSTRATOR GUIDES</a></li>
+                    <li><a href="#">PHOTOSHOP GUIDES</a></li>
+                    <li><a href="#">UA GA LOBBY</a></li>
+                    <li><a href="#">UA GA EVENTS & NEWS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="image/Elements/Menus.png">
+        </div>
+        
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function () {
+                if (sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0";
+                    menu.src = "image/Elements/close.png";
+                } else {
+                    sideNav.style.right = "-250px";
+                    menu.src = "image/Elements/Menus.png";
+                }
+            }
+        </script>
+
+        <!-- Titles -->
+        
+        <section id="feature">
+            <div class="title-text">
+                <p>UA - GA</p>
+                <h1>MEMBERS</h1>
+            </div>
+        </section>
+        
+        <!-- Teams -->
+        
+        <section class="teams" id="teams">
+            <div class="max-width">
+                <h2 class="title">Team Overture</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <a href="image/Members/Team Overture/Kenneth.png" data-lightbox="mygallery"><img
+                                    src="image/Members/Team Overture/Kenneth.png" alt=""></a>
+                            <div class="text">Kenneth Arceo Cayton</div>
+                            <p>Graphics Artist (06/09/2022 - Present)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- footer section start -->
+
+<footer>
+    <span>Created By <a href="#">Kenarc</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+</footer>
+
+    </body>
+</html>
