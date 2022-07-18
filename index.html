@@ -2,63 +2,59 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>OBPH Graphics Artist - Guides</title>
+        <title>Login And Registration Form</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="lightbox.min.css">
-        <script src="lightbox-plus-jquery.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Unna&display=swap" rel="stylesheet">
     </head>
 <body>
-    <section id="banner">
-        <img src="image/OBPH Logo/Office Beacon Logo Horizontal.png" class="logo">
-        <div class="banner-text">
-            <h1>UA - GA Guides!</h1>
-            <p>We overcome our limits!</p>
-            <div class="banner-btn">
-                <a href="#"><span></span>About Us</a>
-                <a href="members.html"><span></span>Members</a>
-            </div>
+
+    <div class="bground">
+        <div id="logo">
+            <img src="image/OBPH Logo/Office Beacon Logo Horizontal.png" class="logo">
         </div>
-    </section>
-
-    <!-- Menu -->
-
-    <div id="sideNav">
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="members.html">MEMBERS</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">ILLUSTRATOR GUIDES</a></li>
-                <li><a href="#">PHOTOSHOP GUIDES</a></li>
-                <li><a href="#">UA GA LOBBY</a></li>
-                <li><a href="#">UA GA EVENTS & NEWS</a></li>
-            </ul>
-        </nav>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="image/Elements/Google icon.png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
     </div>
-    <div id="menuBtn">
-        <img src="image/Elements/Menus.png">
-    </div>
-   
+
     <script>
-        var menuBtn = document.getElementById("menuBtn")
-        var sideNav = document.getElementById("sideNav")
-        var menu = document.getElementById("menu")
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
 
-        sideNav.style.right = "-250px";
-
-        menuBtn.onclick = function(){
-            if(sideNav.style.right == "-250px"){
-                sideNav.style.right = "0";
-                menu.src = "image/Elements/close.png";
-            }else{
-                sideNav.style.right = "-250px";
-                menu.src = "image/Elements/Menus.png";
-            } 
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
         }
+        function login() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
     </script>
 
     <!-- footer section start -->
