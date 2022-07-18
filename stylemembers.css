@@ -6,6 +6,10 @@
 
 html {
     scroll-behavior: smooth;
+    background: linear-gradient(#ff8a00, rgba(0, 0, 0, 0.5), #fff),url(image/Banner/Banner\ for\ now.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .max-width {
@@ -37,10 +41,21 @@ nav ul li a {
     color: #fff;
 }
 
+/* logo */
+
+#logo img{
+    width: 150px;
+    height: 40px;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+/* menu btn */
+
 #menuBtn {
     width: 50px;
     height: 50px;
-    background: none;
+    background: #ff8a00;
     text-align: center;
     position: fixed;
     right: 30px;
@@ -103,12 +118,13 @@ nav ul li a {
 
 .title-text h1 {
     font-size: 50px;
+    color: #fff;
 }
 
 /* Teams name section styling */
 
 .title {
-    color: #111;
+    color: #fff;
     text-align: center;
     padding-bottom: 40px;
 }
@@ -117,14 +133,17 @@ nav ul li a {
 .teams{
     padding-bottom: 100px;
 }
+
 .teams .carousel .card {
-    background: linear-gradient(#fff, #ff8a00);
+    background: url(image/Elements/card\ view.png);
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
-
+/* full background Card */
 .teams .carousel .card:hover {
     background: #ff8a00;
     border: 1px solid #111;
@@ -145,8 +164,7 @@ nav ul li a {
 }
 
 .teams .carousel .card .box p {
-    background: #fff;
-    border-radius: 6px;
+    background: none;
     padding: 10px 10px;
     text-align: center;
     transition: all 0.3s ease;
@@ -157,9 +175,10 @@ nav ul li a {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
+/* position background Card */
 .teams .carousel .card:hover .box p {
-    border: 1px solid black;
+    border: 2px solid #fff;
+    border-radius: 6px;
 }
 
 .teams .carousel .card img {
@@ -204,7 +223,7 @@ nav ul li a {
 
 footer {
     background: #111;
-    padding: 20px 23px;
+    padding: 10px 23px;
     color: #fff;
 }
 
